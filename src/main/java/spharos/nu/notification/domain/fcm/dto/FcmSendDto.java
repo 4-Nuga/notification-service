@@ -12,6 +12,8 @@ public class FcmSendDto {
 
     private String body;
 
+    private String userUuid;
+
     @Builder(toBuilder = true)
     public FcmSendDto(String token, String title, String body) {
         this.token = token;
